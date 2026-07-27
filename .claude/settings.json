@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)",
+      "Read(//tmp/**)",
+      "Read(//c/tmp/**)",
+      "Bash(ls -la \"/c/Drug\" 2>&1)",
+      "Read(//c/Drug/**)",
+      "WebFetch(domain:www.kaggle.com)",
+      "Read(//c/Users/yogesh.gowda/**)",
+      "Bash(env)",
+      "Bash(python -c \"import kagglehub\")",
+      "Bash(python -c \"import pandas\")",
+      "Bash(python -m py_compile src/scrape.py src/config.py)",
+      "Bash(python -m py_compile src/impute.py)",
+      "Bash(python -m py_compile src/label_and_train.py)",
+      "Bash(gh api *)",
+      "Bash(gh repo *)",
+      "Bash(python -m py_compile src/compute_trust_score.py src/label_and_train.py src/config.py)",
+      "Bash(python -m py_compile src/label_and_train.py src/config.py src/embed_and_push_to_neon.py)",
+      "Bash(ls -la /c/ 2>&1 | head -20)",
+      "Read(//c//**)",
+      "Bash(git clone *)",
+      "Bash(ls -la /c/Drug-Space/ 2>&1)",
+      "Read(//c/Drug-Space//**)",
+      "Read(//c/Drug-Space/**)",
+      "Bash(python -m py_compile app.py)",
+      "Bash(npm run *)",
+      "Bash(npm install *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Drug",
+      "C:\\Drug\\src",
+      "C:\\Drug-Space"
+    ]
+  }
+}
